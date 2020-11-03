@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!-- Header --> 
+        <!-- Header -->
         <div class="headerBar">
             <a href = "https://www.csus.edu/"><img class="headerButton" alt="Sac State logo" src="https://www.csus.edu/NewCSUS2019-global-assets/_internal/images/logo-horizontal.png"></a>
             <a href = "https://www.csus.edu/apply/" class="headerButton">APPLY</a>
@@ -18,18 +18,25 @@
             <img class="splashImage" src="images/ThatsBananas.jpg" alt = "That's Bananas!" width="4000">
             <div class="topLeft">That's Banana's!</div>
         </div>
-        <div class="landingpage">
+        <div>
             <div class="prompt"> Click an option below for relevant links</div>
             <div class="linkHolderMain">
+              <div class="linkAndImage">
                 <div class="linkHolder" onmouseover="menu1on()" onmouseout="menu1off()">
                     <h1>Driving?</h1>
                     <ul class="linkHolderMenu" id="menu-box1" style="display: none">
                         <li><a href="#">Parking Pass</a></li>
                         <li><a href="#">Parking Garage Map</a></li>
                         <li><a href="#">Cost Information</a></li>
-                        <li><a href="#">Carpool</a></li>
-                        <li><a href="#">Zipcar Carsharing</a></li>
                     </ul>
+                </div>
+                <div class="imageHolder">
+                  <img src="images/SacState_Vehicle.jpg">
+                </div>
+              </div>
+              <div class="linkAndImage">
+                <div class="imageHolder">
+                  <img src="images/SacState_Shuttle1.jpg">
                 </div>
                 <div class="linkHolder" onmouseover="menu2on()" onmouseout="menu2off()">
                     <h1>Public Transportation?</h1>
@@ -37,9 +44,10 @@
                         <li><a href="#">On-Campus Shuttle Information</a></li>
                         <li><a href="#">Public Bus Information</a></li>
                         <li><a href="#">Commuter Sleeve</a></li>
-
                     </ul>
                 </div>
+              </div>
+              <div class="linkAndImage">
                 <div class="linkHolder" onmouseover="menu3on()" onmouseout="menu3off()">
                     <h1>Biking or Walking?</h1>
                     <ul class="linkHolderMenu" id="menu-box3" style="display: none">
@@ -48,7 +56,22 @@
                         <li><a href="#">Map of Campus and Surrounding Area</a></li>
                     </ul>
                 </div>
-                
+                <div class="imageHolder">
+                  <img src="images/SacState_WalkBike.jpg">
+                </div>
+              </div>
+              <div class="linkAndImage">
+                <div class="imageHolder">
+                  <img src="images/SacState_Carpool.jpg">
+                </div>
+                <div class="linkHolder" onmouseover="menu4on()" onmouseout="menu4off()">
+                  <h1>Carpool</h1>
+                  <ul class="linkHolderMenu" id="menu-box4" style="display: none">
+                    <li><a href="#">Carpool Parking Pass</a></li>
+                    <li><a href="#">Zipcar Carsharing</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
         </div>
         <script src="elementsJavascript.js"></script>
